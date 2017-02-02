@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.groceriesstore.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/groceries2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paddy's groceries Store"
+            android:textSize="32dp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="where your biggest dreams come true"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Want to contact us? There you go..."
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_place_black_24dp"
+        android:layout_above="@+id/webpage"
+        android:layout_alignLeft="@+id/web"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Ave NewYork"
+        android:layout_toRightOf="@id/location"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/web"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_public_black_24dp"
+        android:layout_below="@id/location"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/webpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.paddysgroceries.com"
+        android:layout_toRightOf="@id/web"
+        android:layout_below="@id/address"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_phone_black_24dp"
+        android:layout_below="@id/web"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_margin="16dp"
+        android:text="We have loads of nice sweets like gummybears or chocolate. Come and visit us to get an tasty explosion on your tongue like you never had before. You will never forget that visit."
+        android:background="#E64A19"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1294584574"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_toRightOf="@+id/location"
+        android:layout_toEndOf="@+id/location"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFFFFF"/>
+
+
+</RelativeLayout>
